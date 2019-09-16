@@ -24,7 +24,7 @@ i18n
   ns: ['common','restaurant_menu'],
   defaultNS: 'common',
   whitelist: ['en', 'de', 'vi', 'cn', 'jp'],
-  fallbackLng: 'en',
+  fallbackLng: ['de', 'en'],
   debug: false,
   keySeparator: true, // we do not use keys in form messages.welcome
   interpolation: {
@@ -57,6 +57,7 @@ i18n
 }).then(()=>{
     // eslint-disable-next-line no-console
     // console.log('Language init success');
+    i18n.t('i18n', { lng: 'de' } ); // -> "Internationalization"
   },
   ()=>{
     // eslint-disable-next-line no-console
