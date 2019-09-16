@@ -9,7 +9,6 @@ function importAll(r) {
 const images = importAll(require.context('../resources/img/food', false, /\.(png|jpe?g|svg)$/));
 
 const photos = images.map(x=>{
-  console.log(x)
   return {src:x, width:4, height:3}
 });
 
