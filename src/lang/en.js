@@ -38,6 +38,7 @@ export const en={
     'long_intro_chefs': 'Chefs'
   },
   restaurant_menu: {
+    'menu_section_lunch': 'Lunch',
     'menu_section_starters': 'Starters',
     'menu_section_chicken': 'Chicken',
     'menu_section_duck': 'Ducks',

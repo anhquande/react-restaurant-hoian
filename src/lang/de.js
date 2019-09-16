@@ -26,7 +26,19 @@ export const de={
       'Mit unseren hochwertigen Gerichten und einem schnellen und zuvorkommenden Service hoffen wir, jeden unserer Kunden zufrieden stellen zu können.<br/>' +
       'Entdecken Sie jetzt unsere innovativen Rezepte. Sie werden den Unterschied schmecken.<br/><br/>' +
       'Ihre Hoi An',
-
-
+  },
+  restaurant_menu: {
+    'menu_section_lunch': 'Mittagskarte',
+    'menu_section_starters': 'Vorspeisen',
+    'menu_section_chicken': 'Hähnchen',
+    'menu_section_duck': 'Ente',
+    'menu_section_beef': 'Rindfleisch',
+    'menu_section_seafood': 'Seafood',
+    'menu_section_veggie': 'Vegetarisch',
+    'menu_section_desserts': 'Nachtisch',
+    'menu_section_wine': 'Weine',
+    'menu_section_softdrinks': 'Soft drinks',
+    'menu_section_warmdrinks': 'Warm drinks',
   }
+
 };
