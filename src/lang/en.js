@@ -40,6 +40,7 @@ export const en={
   restaurant_menu: {
     'menu_section_lunch': 'Lunch',
     'menu_section_starters': 'Starters',
+    'menu_section_summertime_rolls': 'Summertime Rolls',
     'menu_section_chicken': 'Chicken',
     'menu_section_duck': 'Ducks',
     'menu_section_beef': 'Beef',

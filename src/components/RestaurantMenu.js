@@ -4,7 +4,7 @@ import LongText from './LongText';
 
 const menu_groups = [
   { id: 'lunch', showOnHome: true },
-  { id: 'starters', showOnHome: false },
+  { id: 'starters', showOnHome: true },
   { id: 'main', showOnHome: false },
   { id: 'desserts', showOnHome: false },
   { id: 'drinks', showOnHome: false },
@@ -106,17 +106,106 @@ const menus = [
     groupId: 'starters',
     order: 1,
     items: [
-      { id: '1', price: '13,35', name: 'Tom Chien Com', description: 'Tom chien voi com' },
-      { id: '2', price: '4,39', name: 'Tom rang muoi', description: 'Tom rang voi muoi' }
+      {
+        id: '11',
+        price: '3,90',
+        name: 'Pagoda Rolls',
+        description: 'Vegane Frühlingsrollen mit Gemüse, Süß-sauer-Dip ',
+        portion: '2 Stk (hausgemacht)',
+        hint: 'A,W',
+        vegan: true
+      },
+      {
+        id: '12',
+        price: '6,90',
+        name: 'Hoi An Frühlingsrolle Spezial',
+        description: 'gebratene Hähnchen in Wok mit Zitronengras, Chilli, Karotte, Brokkoli, Blumenkohl ',
+        hint: 'A,B,I,W'
+      },
+      {
+        id: '13',
+        price: '6,90',
+        name: 'Nems Ha Noi',
+        description: 'Frühlingsrollen mit Hähnchen, Frühlingszwiebel, Karotten, Morcheln, Glasnudeln, Nước mắm Dip',
+        hint: 'A,B,I,W'
+      },
+      {
+        id: '14',
+        price: '4,90',
+        name: 'Crispy Tofu',
+        description: 'Seidentofu mit knusprigen Reisflocken, Knoblauch, Chilli',
+        hint: 'A,B,I,W',
+        vegan: true
+      },
+      {
+        id: '15',
+        price: '5,50',
+        name: 'Honey Chicken',
+        description: 'Chicken Wings nach vietnamesischer Art',
+        hint: 'B',
+        spicy: 1
+      },
+      {
+        id: '16',
+        price: '5,50',
+        name: 'Pork BBQ',
+        description: 'Schweinespieße nach vietnamesischer Art, Schnittlauch, Nước mắm Dip',
+        hint: 'A,B,F,G,L,N,W',
+        spicy: 1
+      },
+      {
+        id: '17',
+        price: '5,50',
+        name: 'Epi-Tempura',
+        description: 'Panierte Black-Tiger-Garnelen in grünen Reisflocken',
+        hint: 'A,B,F,G,L,N,W',
+      },
+      {
+        id: '18',
+        price: '6,90',
+        name: 'Epi-Tempura-Reisflocken',
+        description: 'Panierte Black-Tiger-Garnelen in Reisflocken',
+        hint: 'A,B,F,G,L,N,W',
+      },
+      {
+        id: '19',
+        price: '6,90',
+        name: 'Epi-Tempura-Kokosflocken',
+        description: 'Panierte Black-Tiger-Garnelen in Reisflocken',
+        hint: 'A,B,F,G,L,N,W',
+      },
     ]
   },
   {
-    id: 'chicken',
-    groupId: 'main',
+    id: 'summertime_rolls',
+    groupId: 'starters',
     order: 1,
     items: [
-      { id: '1', name: 'Tom Chien Com', description: 'Tom chien voi com' },
-      { id: '2', name: 'Tom rang muoi', description: 'Tom rang voi muoi' }
+      {
+        id: '21',
+        price: '5,50',
+        name: 'Buddha Rolls',
+        description: 'Tofu | Reisfadennudeln | Tương đen Dip',
+        portion: '2 Stk',
+        hint: 'A,I,N,W',
+        vegan: true
+      },
+      {
+        id: '22',
+        price: '6,50',
+        name: 'Classic Summer Rolls',
+        description: 'Sommersrollen gefüllt mit Hähchen, Garnelen, Salat, Reisfadennudeln in Reispapier mantel',
+        portion: '2 Stk',
+        hint: 'B,C',
+      },
+      {
+        id: '23',
+        price: '5,90',
+        name: 'Beef Rolls',
+        description: 'Sommersrollen gefüllt mit Rindfleisch, Salat, Reisfadennudeln in Reispapier mantel',
+        portion: '2 Stk',
+        hint: 'B,C',
+      },
     ]
   },
   {
