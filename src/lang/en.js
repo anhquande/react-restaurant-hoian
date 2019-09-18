@@ -35,7 +35,10 @@ export const en={
       'With our high quality dishes and fast and courteous service, we hope to satisfy each of our customers.<br/>' +
       'Discover our innovative recipes now. You will taste the difference!<br/>' +
       'Your Hoi An<br/>',
-    'long_intro_chefs': 'Chefs'
+    'long_intro_chefs': 'Chefs',
+    'tooltip_spicy_1': 'Spicy',
+    'tooltip_vegan': 'Vegan',
+    'tooltip_vegan': 'Vegan',
   },
   restaurant_menu: {
     'menu_section_lunch1': 'Lunch',
