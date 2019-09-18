@@ -1,5 +1,5 @@
 export const vi={
-  common:{
+  commons:{
     'en':'English',
     'de': 'Deutsch',
     'vi': 'Tiếng Việt',
@@ -13,8 +13,6 @@ export const vi={
     'opening_hours_saturday': 'Thứ 7',
     'opening_hours_sunday_holiday': 'Chủ nhật, ngày lễ',
     'closed': 'Đóng cửa',
-    'header_our_restaurant': 'Nhà hàng Hội An',
-    'header_awarded_chefs': 'Đầu bếp chuyên nghiệp',
     'long_intro_restaurant':'' +
       'Chào mừng quý khách đến nhà hàng Hội An<br/>' +
       'Đến với nhà hàng chúng tôi, quý khách sẽ được phục vụ các đặc sản đặc sản truyền thống Việt Nam do chính các đầu bếp chuyên nghiệp từ trong nước thực hiện.<br/>' +

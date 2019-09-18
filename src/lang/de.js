@@ -1,5 +1,5 @@
 export const de={
-  common:{
+  commons:{
     'address': 'Adresse',
     'opening_hours': 'Öffnungszeiten',
     'opening_hours_monday': 'Mo.',

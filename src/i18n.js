@@ -21,8 +21,8 @@ i18n
 // for all options read: https://www.i18next.com/overview/configuration-options
 .init({
   resources,
-  ns: ['common','restaurant_menu'],
-  defaultNS: 'common',
+  ns: ['commons','restaurant_menu'],
+  defaultNS: 'commons',
   whitelist: ['en', 'de', 'vi', 'cn', 'jp'],
   fallbackLng: ['de', 'en'],
   debug: false,

@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Paper from '@material-ui/core/Paper';
-import { grey } from '@material-ui/core/colors';
 import { useTranslation } from 'react-i18next';
 import TranslateIcon from '@material-ui/icons/Translate';
 import IconButton from '@material-ui/core/IconButton';
@@ -37,15 +36,6 @@ const useStyles = makeStyles(theme => ({
     right: 0,
     left: 0,
   },
-  fake: {
-    backgroundColor: grey[200],
-    height: theme.spacing(3),
-    margin: theme.spacing(2),
-    // Selects every two elements among any group of siblings.
-    '&:nth-child(2n)': {
-      marginRight: theme.spacing(3),
-    },
-  },
 }));
 
 export default function LanguageSwitcher() {
@@ -60,8 +50,6 @@ export default function LanguageSwitcher() {
   const handleClickAway = () => {
     setOpen(false);
   };
-
-  const fake = <div className={classes.fake}/>;
 
   const changeLocale = locale => {
     i18n.changeLanguage(locale, () => {

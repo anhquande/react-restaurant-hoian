@@ -1,5 +1,5 @@
 export const en={
-  common:{
+  commons:{
     'en':'English',
     'de': 'Deutsch',
     'vi': 'Tiếng Việt',
@@ -38,7 +38,8 @@ export const en={
     'long_intro_chefs': 'Chefs'
   },
   restaurant_menu: {
-    'menu_section_lunch': 'Lunch',
+    'menu_section_lunch1': 'Lunch',
+    'menu_section_lunch2': 'Lunch',
     'menu_section_starters': 'Starters',
     'menu_section_summertime_rolls': 'Summertime Rolls',
     'menu_section_salads': 'Salads',

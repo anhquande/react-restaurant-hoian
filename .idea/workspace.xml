@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5e6ba86-a83e-4b1f-adec-0444bea452b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/SectionSubtitle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LanguageSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanguageSwitcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LongText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LongText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RestaurantMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RestaurantMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SectionSubtitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SectionSubtitle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/de.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +80,8 @@
       <workItem from="1568704888111" duration="1381000" />
       <workItem from="1568708556147" duration="36000" />
       <workItem from="1568736008539" duration="6138000" />
+      <workItem from="1568791600265" duration="9000" />
+      <workItem from="1568800972695" duration="1309000" />
     </task>
     <servers />
   </component>
@@ -103,7 +107,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/lang/en.js</url>
           <line>49</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

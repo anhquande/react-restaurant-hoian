@@ -4,6 +4,7 @@ import LongText from './LongText';
 import SectionSubtitle from './SectionSubtitle';
 import { GiChiliPepper as SpicyIcon } from "react-icons/gi";
 import { IoIosLeaf as VeganIcon } from "react-icons/io"
+import { Tooltip } from '@material-ui/core';
 
 const menu_groups = [
   { id: 'lunch', showOnHome: true },
@@ -16,7 +17,7 @@ const menu_groups = [
 
 const menus = [
   {
-    id: 'lunch',
+    id: 'lunch1',
     groupId: 'lunch',
     order: 1,
     items: [
@@ -65,6 +66,13 @@ const menus = [
         name: 'Bo Xao Dua',
         description: 'Rindfleisch mit Ananas, Wok Gemüse und Jasmin Reis'
       },
+    ]
+  },
+  {
+    id: 'lunch2',
+    groupId: 'lunch',
+    order: 2,
+    items: [
       {
         id: 'M7',
         price: '6,90',
@@ -410,6 +418,21 @@ const menus = [
         description: 'Mariniertes Hähnchenfleisch | Frühlingsrollen | Nuoc Mam Soße',
         hint: 'B,N,A,W,I'
       },
+      {
+        id: '56', price: '11,90', name: `Sai Gon Bowl`,
+        description: 'Gegrillte Schweinbauchstreifen | Frühlingsrollen | Nuoc Mam Soße',
+        hint: 'B,F,N,A,W,I'
+      },
+      {
+        id: '57', price: '14,90', name: `Cha Ca La Vong`,
+        description: 'Gegrilltes Wolfbarschfillet | Dill | vietnamesische Currysoße',
+        hint: 'B,N'
+      },
+      {
+        id: '58', price: '18,90', name: `Hoi An Spezialität`, recommended: true,
+        description: 'Gegrilltes Schweinfleisch | Hähnchenfleisch | Rindfleisch | Garnelen | Salat | Nuoc Mam Soße',
+        hint: 'A,N,B'
+      },
     ]
   },
   {
@@ -470,8 +493,8 @@ const ItemName = ({item}) => {
       <div className="menu-item-name">
         {item.id && `${item.id}.`}
         {item.name}
-        {item.vegan && (<span style={{marginLeft:8,color:'green'}}><VeganIcon/><VeganIcon/></span>)}
-        {item.veggie && (<span style={{marginLeft:8,color:'cyan'}}><VeganIcon/></span>)}
+        {item.vegan && (<Tooltip title={"Vegan"}><span style={{marginLeft:8,color:'green'}}><VeganIcon/><VeganIcon/></span></Tooltip>)}
+        {item.veggie && (<Tooltip title={"Veggie"}><span style={{marginLeft:8,color:'green'}}><VeganIcon/></span></Tooltip>)}
         {item.spicy && (<span style={{marginLeft:8, color:'red'}}><SpicyIcon/></span>)}
       </div>
     )
