@@ -41,6 +41,21 @@ export const en={
     'menu_section_lunch': 'Lunch',
     'menu_section_starters': 'Starters',
     'menu_section_summertime_rolls': 'Summertime Rolls',
+    'menu_section_salads': 'Salads',
+    'menu_section_soups': 'Soups',
+    'menu_section_pho': 'Pho',
+    'menu_section_pho_subtitle': 'Pho - Vietnamesisches National Gericht',
+    'menu_section_pho_description': 'Pho stammt ursprünglich aus dem Norden Vietnames und ist heute in fast jeder Straßenecke zu jeder' +
+      'Tageszeit zu finden. Das Geheimnis liegt in der Richtigen Mischungen der Gewürze und der Hausgemachten Brühe. ' +
+      'Schlürfen ist erlaubt',
+    'menu_section_bunbohue': 'Bun Bo Hue',
+    'menu_section_bunbohue_subtitle': 'Traditionelle Suppe aus der Kaiserstadt Hue',
+    'menu_section_bunbohue_description': 'Bun Bo Hue ist eine Suppe die aus der alten Kaiserstadt Hue stammt. Eine Fast vergessene Stadt die abseits von' +
+      'den großen Touristenorten ein Muss jeden Reisenden in Vietnam ist. Zurück zum Essen: Bun Bo Hue besticht' +
+      'durch ihren Zitronengrasduft und die leckere rote Farbe. Schlürfen ist erlaubt',
+    'menu_section_special': 'Hoi An Spezial',
+    'menu_section_bun': `Hoi An's Creations with "Bun"`,
+    'menu_section_bun_description': `Die Entdeckung der "Bun-Welt" - vietnamesische Reisfadennudeln. Dazu werden Salat, frische Kräuter, Koriander, Minze, Sojasprossen, Erdnüsse und Röstzwiebeln serviert.`,
     'menu_section_chicken': 'Chicken',
     'menu_section_duck': 'Ducks',
     'menu_section_beef': 'Beef',

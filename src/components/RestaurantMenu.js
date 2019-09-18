@@ -1,12 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LongText from './LongText';
+import SectionSubtitle from './SectionSubtitle';
+import { GiChiliPepper as SpicyIcon } from "react-icons/gi";
+import { IoIosLeaf as VeganIcon } from "react-icons/io"
 
 const menu_groups = [
   { id: 'lunch', showOnHome: true },
   { id: 'starters', showOnHome: true },
-  { id: 'main', showOnHome: false },
-  { id: 'desserts', showOnHome: false },
+  { id: 'soups', showOnHome: true },
+  { id: 'main', showOnHome: true },
+  { id: 'desserts', showOnHome: true },
   { id: 'drinks', showOnHome: false },
 ];
 
@@ -209,39 +213,203 @@ const menus = [
     ]
   },
   {
-    id: 'duck',
-    groupId: 'main',
-    order: 2,
+    id: 'salads',
+    groupId: 'starters',
+    order: 3,
     items: [
-      { id: '1', price: '13,35', name: 'Tom Chien Com', description: 'Tom chien voi com' },
-      { id: '2', price: '4,39', name: 'Tom rang muoi', description: 'Tom rang voi muoi' }
+      {
+        id: '',
+        price: '',
+        name: 'Hoi An Summer',
+        description: 'Grüne Papaya | Zwiebel | Karotten | vietnamesischer Kräuter | Erdnüsse | Krabbenchips',
+        hint: 'A,W',
+        upgrades: [
+          { id: '30', name: 'Vegan', price: '6,50', vegan: true },
+          { id: '31', name: 'mit Garnelen', price: '8,90' },
+          { id: '32', name: 'mit Gegrilltes Hähnchen', price: '6,90', hint: 'B,C' },
+        ]
+      },
+      {
+        id: '',
+        price: '',
+        name: 'Sai Gon Dream',
+        description: 'Salat | Gurke | Karotten | vietnamesische Kräuter | Erdnüsse',
+        hint: 'A,G,N',
+        upgrades: [
+          { id: '33', name: 'Vegan', price: '5,90', vegan: true },
+          { id: '34', name: 'mit Rindfleisch', price: '6,90' },
+          { id: '35', name: 'mit Hähnchenfleisch', price: '6,50', hint: '' },
+          { id: '36', name: 'mit Garnelen', price: '6,90', hint: '' },
+        ]
+      },
     ]
   },
   {
-    id: 'beef',
+    id: 'pho',
+    groupId: 'soups',
+    order: 1,
+    showDescription:true,
+    showSubtitle:true,
+    items: [
+      {
+        id: '40',
+        price: '10,90',
+        name: 'Pho Bo',
+        description: 'Rindfleisch | Rindfleischbällchen | Reisbandnudeln | frischen Kräuter',
+        hint: 'B',
+      },
+      {
+        id: '41',
+        price: '10,50',
+        name: 'Pho Chay',
+        description: 'Tofu | Reisbandnudeln | Gemüse | frische Kräuter | vegane Brühe (auf Wunsch ohne Tofu und mit Gemüse)',
+        vegan: true,
+      },
+    ]
+  },
+  {
+    id: 'bunbohue',
+    groupId: 'soups',
+    order: 2,
+    showDescription:true,
+    showSubtitle:true,
+    items: [
+      {
+        id: '42',
+        price: '11,90',
+        name: 'Bun Bo Hue',
+        description: 'Rindfleisch | Rindfleischbällchen | Reisbandnudeln | Zitronengras | frischen Kräuter',
+        hint: 'B',
+        spicy: 1
+      },
+      {
+        id: '42',
+        price: '10,90',
+        name: 'Bun Bo Hue Chay',
+        description: 'Tofu | Reisbandnudeln | Gemüse | frische Kräuter | vegane Brühe (auf Wunsch ohne Tofu und mit Gemüse)',
+        vegan: true,
+        spicy:1
+      },
+    ]
+  },
+  {
+    id: 'special',
     groupId: 'main',
     order: 3,
     items: [
-      { id: '1', price: '13,35', name: 'Tom Chien Com', description: 'Tom chien voi com' },
-      { id: '2', price: '4,39', name: 'Tom rang muoi', description: 'Tom rang voi muoi' }
+      {
+        id: '61',
+        price: '8,90',
+        name: 'Veggie Pot',
+        description: 'Tofu | Gemüse im Wok geschwenkt | Jasminreis',
+        vegan: true,
+        hint: 'A,I,W'
+      },
+      {
+        id: '62',
+        price: '9,50',
+        name: 'Tofu Love',
+        description: 'Tofu | Karotte | Süßkartoffeln | vietnamesisches Curry | Jasminreis',
+        vegan: true,
+        hint: 'L'
+      },
+      {
+        id: '63',
+        price: '11,50',
+        name: 'Beef Bowl',
+        description: 'Rindfleisch | Pakchoi | Brokkoli | Blumenkohl | Lauch | Jasminreis',
+        hint: 'A,M,W'
+      },
+      {
+        id: '64',
+        price: '10,50',
+        name: 'Beef Bowl',
+        description: 'Hähnchen | Karotten | Süßkartoffeln | vietnamesisches Curry | Jasminreis',
+        hint: 'A,M,W',
+        upgrades: [
+          { id: '', name: 'statt Hähnchenfleisch mit knuspriger Ente', price: '4,00' },
+          { id: '', name: 'statt Hähnchenfleisch mit Garnelen', price: '5,00' },
+        ]
+      },
+      {
+        id: '65',
+        price: '10,90',
+        name: 'Spicy Chicken',
+        description: 'Hähnchen | Lauch | Brokkoli | Zwiebeln | hausgemachter Specialsoße | Jasminreis',
+        hint: 'A,M,W'
+      },
+      {
+        id: '66',
+        price: '15,90',
+        name: 'Yummy Prawns',
+        description: 'Garnelen | Karotten | Blumenkohl | Brokkoli | Kho quet Soße mit Schweinefleisch | Jasminreis ' +
+          '(dazu empfelen wir einen trockenen Silvaner)',
+        hint: 'B,C'
+      },
+      {
+        id: '67',
+        price: '14,90',
+        name: 'Into the sea',
+        description: 'Gabratenes Wolfsbarschfilet | vietnamesische Curry Soße | Jasminreis' +
+          ' (dazu empfelen wir einen fruchtigen Bacchus)',
+        hint: 'B,M'
+      },
+      {
+        id: '68',
+        price: '11,90',
+        name: 'Pacific Times',
+        description: 'Marinierte, gebratener Jasminreis | Tintenfisch | Garnelen | Karotten | Brokkoli | mit Beilagensuppe',
+        hint: 'C,J,M',
+        upgrades:[
+          { id: '', name: 'statt Meeresfrüchte mit Tofu', price: '8,90' },
+        ]
+      },
+      {
+        id: '69',
+        price: '25,90',
+        name: 'Hoi An Spezialität',
+        description: 'Knusprige Ente | Hähnchen | Schweinefleisch | Garnelen | Karotten | Süßkartoffel | vietnamesisches Curry | wird auf heißer Platte serviert',
+        hint: 'A,N,B',
+        recommended: true,
+        upgrades:[
+          { id: '', name: 'statt Meeresfrüchte mit Tofu', price: '8,90' },
+        ]
+      },
     ]
   },
   {
-    id: 'seafood',
+    id: 'bun',
     groupId: 'main',
-    order: 4,
+    order: 1,
+    showDescription: true,
+    showSubtitle: false,
     items: [
-      { id: '1', name: 'Tom Chien Com', description: 'Tom chien voi com' },
-      { id: '2', name: 'Tom rang muoi', description: 'Tom rang voi muoi' }
-    ]
-  },
-  {
-    id: 'vegan',
-    groupId: 'main',
-    order: 5,
-    items: [
-      { id: '1', name: 'Tom Chien Com', description: 'Tom chien voi com' },
-      { id: '2', name: 'Tom rang muoi', description: 'Tom rang voi muoi' }
+      {
+        id: '51', price: '10,50', name: 'Veggie Bowl', vegan: true,
+        description: 'Angebratener Tofu | veg. Frühlingsrollen | vietnamesische Currysoße',
+        hint: 'N,I,A,W'
+      },
+      {
+        id: '52', price: '12,50', name: 'Wrapped Beef',
+        description: 'Gahacktes Rindfleisch mit Pfefferblättern ummantelt | Nuoc Mam Soße',
+        hint: 'B,I,J'
+      },
+      {
+        id: '53', price: '12,90', name: `Nam Bo's Memories`,
+        description: 'Angebratenes Rindfleisch | Frühlingsrollen | Nuoc Mam Soße',
+        hint: 'B,N,A,W,I'
+      },
+      {
+        id: '54', price: '11,50', name: `Bun Cha Ha Noi`,
+        description: 'Marinierte Schweinefrikadellen | gegrillte Schweinebauchstreifen | Salat | Nuoc Mam Soße' +
+          ' (Obamas Wahl bei seinem Vietnambesuch)',
+        hint: 'W,K,I,N'
+      },
+      {
+        id: '55', price: '12,50', name: `Taste of Hoi An`,
+        description: 'Mariniertes Hähnchenfleisch | Frühlingsrollen | Nuoc Mam Soße',
+        hint: 'B,N,A,W,I'
+      },
     ]
   },
   {
@@ -249,8 +417,16 @@ const menus = [
     groupId: 'desserts',
     order: 1,
     items: [
-      { id: '1', price: '13,35', name: 'Tom Chien Com', description: 'Tom chien voi com' },
-      { id: '2', price: '4,39', name: 'Tom rang muoi', description: 'Tom rang voi muoi' }
+      {
+        id: '82', price: '5,50', name: 'Banana Cocos Pearl',
+        description: 'Gedämpfte Banane | Taro-Perle in Kokosnuss | exotische Pan Dang Duftblätter | Erdnüsse',
+        hint: 'F,N'
+      },
+      {
+        id: '83', price: '5,50', name: 'Che Ba Ba', subtitle: 'Typischer vietnamesischer Nachtisch',
+        description: 'Jackfruit | Tapioca | Kokosmilch',
+        hint: ''
+      },
     ]
   },
   {
@@ -289,11 +465,22 @@ const Price = (props) => {
   }
   return null;
 }
+const ItemName = ({item}) => {
+    return (
+      <div className="menu-item-name">
+        {item.id && `${item.id}.`}
+        {item.name}
+        {item.vegan && (<span style={{marginLeft:8,color:'green'}}><VeganIcon/><VeganIcon/></span>)}
+        {item.veggie && (<span style={{marginLeft:8,color:'cyan'}}><VeganIcon/></span>)}
+        {item.spicy && (<span style={{marginLeft:8, color:'red'}}><SpicyIcon/></span>)}
+      </div>
+    )
+}
 const MenuItemUpgrade = ({ details }) => {
   return (
     <>
       <div className="menu-item-upgrade">
-        <div className="menu-item-name">{details.name}</div>
+        <ItemName item={details}/>
         <Price>{details.price}</Price>
       </div>
     </>
@@ -303,7 +490,7 @@ const MenuItemUpgrade = ({ details }) => {
 const MenuItem = ({ item }) => {
   return (
     <div className="menu-item">
-      <div className="menu-item-name">{item.id}. {item.name}</div>
+      <ItemName item={item}></ItemName>
       <Price>{item.price}</Price>
       <div className="menu-item-description">{item.description}</div>
       {item.upgrades && item.upgrades.map(x => (
@@ -318,11 +505,16 @@ const MenuSection = ({ section }) => {
   const t = i18n.getFixedT(null, 'restaurant_menu');
 
   const items = section.items;
+  const mkSectionTitle = `menu_section_${section.id}`;
+  const mkSectionSubtitle = `menu_section_${section.id}_subtitle`;
+  const mkSectionDescription = `menu_section_${section.id}_description`;
   return (
     <div className="col-xs-12 col-sm-6">
       <div className="menu-section">
-        <h2 className="menu-section-title">{t(`menu_section_${section.id}`)}</h2>
+        <h2 className="menu-section-title">{t(mkSectionTitle)}</h2>
         <hr/>
+        {section.showSubtitle && <SectionSubtitle value={mkSectionSubtitle}/>}
+        {section.showDescription && <SectionSubtitle value={mkSectionDescription}/>}
         {items.map(item => <MenuItem item={item} key={item.id}/>)}
       </div>
     </div>
