@@ -82,9 +82,9 @@ export const menus = [
         description: 'Gebratene Reisbandnudeln und frischem Gemüse',
         hint: 'B,I',
         upgrades: [
-          { id: 1, name: 'mit Gemüse', price: '6,50', vegan: true },
-          { id: 1, name: 'mit Tofu', price: '7,00', vegan: true, hint: 'L' },
-          { id: 1, name: 'mit Hähnchen oder Rindfleisch', price: '7,50' },
+          { id: 'A', name: 'mit Gemüse', price: '6,50', vegan: true },
+          { id: 'B', name: 'mit Tofu', price: '7,00', vegan: true, hint: 'L' },
+          { id: 'C', name: 'mit Hähnchen oder Rindfleisch', price: '7,50' },
         ]
       },
       {
@@ -99,9 +99,9 @@ export const menus = [
         name: 'Vietnamesisches Curry',
         description: 'vietnamesisches Curry mit frischem Gemüse, Zitronengras, Kräuter',
         upgrades: [
-          { id: 1, name: 'mit Tofu', price: '5,90', veggie: true, hint: 'L' },
-          { id: 1, name: 'mit Hähnchen', price: '7,90' },
-          { id: 1, name: 'mit Ente', price: '8,90' },
+          { id: 'A', name: 'mit Tofu', price: '5,90', veggie: true, hint: 'L' },
+          { id: 'B', name: 'mit Hähnchen', price: '7,90' },
+          { id: 'C', name: 'mit Ente', price: '8,90' },
         ]
       },
     ]
@@ -129,14 +129,14 @@ export const menus = [
       },
       {
         id: '13',
-        price: '6,90',
+        price: '4,90',
         name: 'Nems Ha Noi',
         description: 'Frühlingsrollen mit Hähnchen, Frühlingszwiebel, Karotten, Morcheln, Glasnudeln, Nước mắm Dip',
         hint: 'A,B,I,W'
       },
       {
         id: '14',
-        price: '4,90',
+        price: '5,90',
         name: 'Crispy Tofu',
         description: 'Seidentofu mit knusprigen Reisflocken, Knoblauch, Chilli',
         hint: 'A,B,I,W',
@@ -160,7 +160,7 @@ export const menus = [
       },
       {
         id: '17',
-        price: '5,50',
+        price: '6,90',
         name: 'Epi-Tempura',
         description: 'Panierte Black-Tiger-Garnelen in grünen Reisflocken',
         hint: 'A,B,F,G,L,N,W',
@@ -168,15 +168,8 @@ export const menus = [
       {
         id: '18',
         price: '6,90',
-        name: 'Epi-Tempura-Reisflocken',
-        description: 'Panierte Black-Tiger-Garnelen in Reisflocken',
-        hint: 'A,B,F,G,L,N,W',
-      },
-      {
-        id: '19',
-        price: '6,90',
-        name: 'Epi-Tempura-Kokosflocken',
-        description: 'Panierte Black-Tiger-Garnelen in Reisflocken',
+        name: 'Cha ram ',
+        description: 'Reispapier mit Schweinefleisch und Garnelen, mit hausgemachtem Dip',
         hint: 'A,B,F,G,L,N,W',
       },
     ]
@@ -219,7 +212,7 @@ export const menus = [
     order: 3,
     items: [
       {
-        id: '',
+        id: 'HA',
         price: '',
         name: 'Hoi An Summer',
         description: 'Grüne Papaya | Zwiebel | Karotten | vietnamesischer Kräuter | Erdnüsse | Krabbenchips',
@@ -231,7 +224,7 @@ export const menus = [
         ]
       },
       {
-        id: '',
+        id: 'SG',
         price: '',
         name: 'Sai Gon Dream',
         description: 'Salat | Gurke | Karotten | vietnamesische Kräuter | Erdnüsse',
@@ -284,7 +277,7 @@ export const menus = [
         spicy: 1
       },
       {
-        id: '42',
+        id: '43',
         price: '10,90',
         name: 'Bun Bo Hue Chay',
         description: 'Tofu | Reisbandnudeln | Gemüse | frische Kräuter | vegane Brühe (auf Wunsch ohne Tofu und mit Gemüse)',
@@ -328,8 +321,10 @@ export const menus = [
         description: 'Hähnchen | Karotten | Süßkartoffeln | vietnamesisches Curry | Jasminreis',
         hint: 'A,M,W',
         upgrades: [
-          { id: '', name: 'statt Hähnchenfleisch mit knuspriger Ente', price: '4,00' },
-          { id: '', name: 'statt Hähnchenfleisch mit Garnelen', price: '5,00' },
+          { id: 'A', name: 'statt Hähnchenfleisch mit knuspriger Ente', price: '+4,00' },
+          { id: 'B', name: 'statt Hähnchenfleisch mit Garnelen', price: '+5,00' },
+          { id: 'C', name: 'statt Hähnchenfleisch mit Rindfleisch', price: '+1,50' },
+          { id: 'D', name: 'mit Erdnusscurry', price: '+0,50' },
         ]
       },
       {
@@ -337,7 +332,12 @@ export const menus = [
         price: '10,90',
         name: 'Spicy Chicken',
         description: 'Hähnchen | Lauch | Brokkoli | Zwiebeln | hausgemachter Specialsoße | Jasminreis',
-        hint: 'A,M,W'
+        hint: 'A,M,W',
+        upgrades: [
+          { id: 'A', name: 'statt Hähnchenfleisch mit knuspriger Ente', price: '+4,00' },
+          { id: 'B', name: 'statt Hähnchenfleisch mit Garnelen', price: '+5,00' },
+          { id: 'C', name: 'statt Hähnchenfleisch mit Rindfleisch', price: '+1,50' },
+        ]
       },
       {
         id: '66',
@@ -362,7 +362,7 @@ export const menus = [
         description: 'Marinierte, gebratener Jasminreis | Tintenfisch | Garnelen | Karotten | Brokkoli | mit Beilagensuppe',
         hint: 'C,J,M',
         upgrades: [
-          { id: '', name: 'statt Meeresfrüchte mit Tofu', price: '8,90' },
+          { id: 'A', name: 'statt Meeresfrüchte mit Tofu', price: '8,90' },
         ]
       },
       {
@@ -373,7 +373,7 @@ export const menus = [
         hint: 'A,N,B',
         recommended: true,
         upgrades: [
-          { id: '', name: 'statt Meeresfrüchte mit Tofu', price: '8,90' },
+          { id: 'A', name: 'statt Meeresfrüchte mit Tofu', price: '8,90' },
         ]
       },
     ]
