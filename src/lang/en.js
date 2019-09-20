@@ -38,7 +38,7 @@ export const en={
     'long_intro_chefs': 'Chefs',
     'tooltip_spicy_1': 'Spicy',
     'tooltip_vegan': 'Vegan',
-    'tooltip_vegan': 'Vegan',
+    'tooltip_vegiee': 'Vegetarian',
   },
   restaurant_menu: {
     'menu_section_lunch1': 'Lunch',
