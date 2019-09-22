@@ -21,8 +21,8 @@ const IntroTeam = () => {
               <div className="thumbnail">
                 <div className="team-img"><img src={PhotoTeam1} alt="..."/></div>
                 <div className="caption">
-                  <h3>Over 18 years of experience</h3>
-                  <p>Former Chef, Lion Hotel, Vuon Pho Restaurant</p>
+                  <h3>Über 18 Jahre Erfahrung</h3>
+                  <p>Ehemaliger Chefkoch, Lion Hotel, Vuon Pho Restaurant</p>
                 </div>
               </div>
             </div>
@@ -31,8 +31,8 @@ const IntroTeam = () => {
                 <div className="team-img"><img src={PhotoTeam2} alt="..."/></div>
                 <div className="caption">
                   <h3>
-                    Kitchen Vietnamese lecturer</h3>
-                  <p><a href="https://netspace.edu.vn/thay-huynh-quoc-binh/">Netspace</a> Culinary Vocational School</p>
+                    Vietnamesische Küchenlehrer</h3>
+                  <p><a href="https://netspace.edu.vn/thay-huynh-quoc-binh/">Netspace</a> Kulinarische Berufsschule</p>
                 </div>
               </div>
             </div>
@@ -40,8 +40,8 @@ const IntroTeam = () => {
               <div className="thumbnail">
                 <div className="team-img"><img src={PhotoTeam3} alt="..."/></div>
                 <div className="caption">
-                  <h3>Former Chef of the U19</h3>
-                  <p>Vietnam National Football Team</p>
+                  <h3>Ehemaliger Chefkoch, </h3>
+                  <p>Vietnamesische Fußballnationalmannschaft (U-19-Männer)</p>
                 </div>
               </div>
             </div>
