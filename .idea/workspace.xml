@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5e6ba86-a83e-4b1f-adec-0444bea452b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/templates/Private.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/Public.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/FullScreenLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/PublicLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SliderPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +44,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\private-react\react-restaurant-hoian\src" />
       <recent name="E:\private-react\react-restaurant-hoian\src\pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">

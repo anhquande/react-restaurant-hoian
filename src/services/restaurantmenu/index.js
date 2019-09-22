@@ -1,3 +1,4 @@
+import gen_uuid from 'uuid/v4'
 
 export const menu_groups = [
   { id: 'lunch', showOnHome: true },
@@ -321,7 +322,7 @@ export const menus = [
         description: 'Hähnchen | Karotten | Süßkartoffeln | vietnamesisches Curry | Jasminreis',
         hint: 'A,M,W',
         upgrades: [
-          { id: 'A', name: 'statt Hähnchenfleisch mit knuspriger Ente', price: '+4,00' },
+          { id: 'A', name: 'statt Hähnchenfleisch mit Ente', price: '+4,00' },
           { id: 'B', name: 'statt Hähnchenfleisch mit Garnelen', price: '+5,00' },
           { id: 'C', name: 'statt Hähnchenfleisch mit Rindfleisch', price: '+1,50' },
           { id: 'D', name: 'mit Erdnusscurry', price: '+0,50' },
@@ -334,7 +335,7 @@ export const menus = [
         description: 'Hähnchen | Lauch | Brokkoli | Zwiebeln | hausgemachter Specialsoße | Jasminreis',
         hint: 'A,M,W',
         upgrades: [
-          { id: 'A', name: 'statt Hähnchenfleisch mit knuspriger Ente', price: '+4,00' },
+          { id: 'A', name: 'statt Hähnchenfleisch mit Ente', price: '+4,00' },
           { id: 'B', name: 'statt Hähnchenfleisch mit Garnelen', price: '+5,00' },
           { id: 'C', name: 'statt Hähnchenfleisch mit Rindfleisch', price: '+1,50' },
         ]
@@ -474,10 +475,27 @@ export const menus = [
   }
 ]
 
-export function fetchRestaurantMenus(){
-  return menus;
+function uuidList(items){
+  if (items===null || items===undefined){
+    return items;
+  }
+
+  return items.map(item=>{
+    let uuidItem= {uuid: gen_uuid()};
+    for (let key in item) {
+      if (item.hasOwnProperty(key) && (typeof item[key] === "object")) {
+        uuidItem[key] = uuidList(item[key])
+      } else {
+        uuidItem[key] = item[key]
+      }
+    }
+    return uuidItem;
+  })
+}
+export function fetchRestaurantMenus() {
+  return uuidList(menus);
 }
 
-export function fetchRestaurantMenuGroups(){
-  return menu_groups;
+export function fetchRestaurantMenuGroups() {
+  return menu_groups.map(g => ({ ...g, uuid: gen_uuid() }))
 }

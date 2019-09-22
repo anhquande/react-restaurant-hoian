@@ -55,24 +55,20 @@ const ItemName = ({ item }) => {
 }
 const MenuItemUpgrade = ({ details }) => {
   return (
-    <>
-      <div className="menu-item-upgrade">
-        <ItemName item={details}/>
-        <Price>{details.price}</Price>
-      </div>
-    </>
+    <div className="menu-item-upgrade">
+      <ItemName item={details}/>
+      <Price>{details.price}</Price>
+    </div>
   )
 }
 
 const MenuItem = ({ item }) => {
   return (
     <div className="menu-item">
-      <ItemName item={item}></ItemName>
+      <ItemName item={item}/>
       <Price>{item.price}</Price>
       <div className="menu-item-description">{item.description}</div>
-      {item.upgrades && item.upgrades.map(x => (
-        <MenuItemUpgrade details={x}/>
-      ))}
+      {item.upgrades && item.upgrades.map(x => <MenuItemUpgrade details={x} key={x.uuid}/>)}
     </div>
   )
 };
@@ -92,7 +88,7 @@ const MenuSection = ({ section }) => {
         <hr/>
         {section.showSubtitle && <SectionSubtitle value={mkSectionSubtitle}/>}
         {section.showDescription && <SectionSubtitle value={mkSectionDescription}/>}
-        {items.map(item => <MenuItem item={item} key={item.id}/>)}
+        {items.map(item => <MenuItem item={item} key={item.uuid}/>)}
       </div>
     </div>
   )
@@ -101,7 +97,7 @@ const MenuGroup = ({ group, menus }) => {
   const sections = menus.filter(x => x.groupId === group.id).sort((a, b) => a.order - b.order);
   return (
     <div className="row">
-      {sections.map(section => <MenuSection section={section} key={section.id}/>)}
+      {sections.map(section => <MenuSection section={section} key={section.uuid}/>)}
     </div>
   )
 }
@@ -120,7 +116,7 @@ const RestaurantMenu = () => {
       </div>
       <div className="container">
         {menu_groups.filter(group => group.showOnHome)
-        .map(group => <MenuGroup group={group} key={group.id} menus={menus}/>)}
+        .map(group => <MenuGroup group={group} key={group.uuid} menus={menus}/>)}
       </div>
     </div>
   )
