@@ -14,6 +14,7 @@ export const en={
     'tel': 'Tel.',
     'opening_hours': 'Opening Hours',
     'opening_hours_monday': 'Mo.',
+    'opening_hours_days_1': 'Mo. - Fr.',
     'opening_hours_tuesday_friday': 'Tu. - Fr.',
     'opening_hours_saturday': 'Sa.',
     'opening_hours_sunday_holiday': 'Su. and holidays',

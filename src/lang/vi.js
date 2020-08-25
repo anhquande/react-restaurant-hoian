@@ -9,6 +9,7 @@ export const vi={
     'restaurant_name': 'Nhà hàng Hội An',
     'opening_hours': 'Giờ mở cửa',
     'opening_hours_monday': 'Thứ 2',
+    'opening_hours_days_1': 'Thứ 2 - Thứ 6',
     'opening_hours_tuesday_friday': 'Thứ 3 - Thứ 6',
     'opening_hours_saturday': 'Thứ 7',
     'opening_hours_sunday_holiday': 'Chủ nhật, ngày lễ',
