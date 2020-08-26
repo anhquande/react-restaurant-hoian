@@ -1,14 +1,10 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
+import {withStyles} from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import HomeIcon from "@material-ui/icons/Home";
 import ListItem from '@material-ui/core/ListItem';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import ListItemText from '@material-ui/core/ListItemText';
-import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import PAGES from '../pages'
 
@@ -47,11 +43,11 @@ class ButtonAppBarCollapse extends React.Component {
   }
 
   toggleDrawer = (close) => {
-    this.setState({ drawer: close });
+    this.setState({drawer: close});
   }
 
   sideList() {
-    const { classes } = this.props;
+    const {classes} = this.props;
     return (
       <div
         className={classes.list}
@@ -72,11 +68,11 @@ class ButtonAppBarCollapse extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const {classes} = this.props;
     return (
       <div className={classes.buttonCollapse}>
         <IconButton onClick={() => {
-          this.setState({ drawer: true })
+          this.setState({drawer: true})
         }}>
           <HomeIcon/>
         </IconButton>
