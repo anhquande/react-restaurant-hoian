@@ -2,7 +2,11 @@ export const de={
   commons:{
     'address': 'Adresse',
     'opening_hours': 'Öffnungszeiten',
+    'delivery_hours': 'Lieferzeiten',
+    'delivery_subtitle': 'innerhalb 5km. Mindestbestellwert: 12,-€. Fahrtkosten: 1,50 €',
     'opening_hours_monday': 'Mo.',
+    'opening_hours_days_1': 'Mo. - So.',
+    'delivery_hours_days_1': 'Mi. - So.',
     'opening_hours_tuesday_friday': 'Di. - Fr.',
     'opening_hours_saturday': 'Sa.',
     'opening_hours_sunday_holiday': 'So. und Feiertage',

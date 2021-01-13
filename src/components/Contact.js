@@ -21,15 +21,16 @@ const Contact = () => {
         <div className="opening-hour">
           <div>
             <div className="col-md-4 label">{t('opening_hours_days_1')}</div>
-            <div className="col-md-8 hour">17:30-22:00</div>
+            <div className="col-md-8 hour">17:30-21:00</div>
           </div>
+        </div>
+      </div>
+      <div className="col-md-4">
+        <h3>{t('delivery_hours')}</h3>
+        <div className="opening-hour">
           <div>
-            <div className="col-md-4 label">{t('opening_hours_saturday')}</div>
-            <div className="col-md-8 hour">13:30-22:30</div>
-          </div>
-          <div>
-            <div className="col-md-4 label">{t('opening_hours_sunday_holiday')}</div>
-            <div className="col-md-8 hour">12:00-14:00 , 17:00-22:00</div>
+            <div className="col-md-4 label">{t('delivery_hours_days_1')}</div>
+            <div className="col-md-8 hour">17:30-21:00</div>
           </div>
         </div>
       </div>
