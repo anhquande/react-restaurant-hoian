@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { ImprintPage } from './pages/ImprintPage';
 import { Footer } from './components/Footer';
 import './i18n';
-import './App.scss';
+import './App.css';
 
 const App = (props) => {
   return (

@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Paper from '@material-ui/core/Paper';
 import { useTranslation } from 'react-i18next';
-import TranslateIcon from '@material-ui/icons/Translate';
 import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -72,7 +71,7 @@ export default function LanguageSwitcher() {
                         aria-label="delete"
                         color="primary"
                         onClick={handleClick}>
-              <TranslateIcon className={classes.buttonIconLeft}/> {i18n.language}
+              {i18n.language}
             </IconButton>
           </Tooltip>
 

@@ -74,7 +74,7 @@ class ButtonAppBarCollapse extends React.Component {
         <IconButton onClick={() => {
           this.setState({drawer: true})
         }}>
-          <HomeIcon/>
+          HOME
         </IconButton>
         <SwipeableDrawer
           open={this.state.drawer}
