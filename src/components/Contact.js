@@ -14,7 +14,7 @@ const Contact = () => {
           <br/><span property="schema:postalCode">{t('address_zip')}</span> <span property="schema:addressLocality">{t('address_locality')}</span>
           <br/><abbr property="schema:addressCountry">{t('address_country')}</abbr>
         </p>
-        <p>{t('tel')}: <span itemProp="telephone" content="+49241404368">0241 404368</span></p>
+        <p className="telephone">{t('tel')}: <span itemProp="telephone" content="+49241404368">0241 404368</span></p>
       </div>
       <div className="col-md-4">
         <h3>{t('opening_hours')}</h3>

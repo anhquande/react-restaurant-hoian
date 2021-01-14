@@ -370,21 +370,6 @@ header .intro-text {
   margin-top: -26px;
 }
 
-/* Portfolio Section */
-#portfolio {
-  padding: 0 0 120px 0;
-}
-
-#portfolio .section-title {
-  background: #444 url(./resources/img/gallery-bg.jpg) center center no-repeat fixed;
-  background-size: cover;
-  margin-bottom: 50px;
-}
-
-#portfolio .section-title h2 {
-  color: #fff;
-}
-
 .categories {
   padding-bottom: 30px;
   text-align: center;
@@ -638,7 +623,13 @@ ol.type li a:hover {
 
 #footer p {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.8)
+  color: rgba(255, 255, 255, 0.8);
+
+  &.telephone {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 1.25em;
+  }
 }
 
 #footer a {
@@ -650,6 +641,7 @@ ol.type li a:hover {
 }
 
 .opening-hour {
+  font-size: 1.5em;
   .label {
     text-align: left;
     font-weight: bold;
@@ -658,11 +650,13 @@ ol.type li a:hover {
   .hour {
     text-align: right;
     font-weight: normal;
+    color: #4cae4c;
   }
 }
 
 .contact {
   .restaurant-name {
     font-weight: 600;
+    font-size: 1.25em;
   }
 }
