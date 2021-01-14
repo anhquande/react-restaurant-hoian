@@ -46,6 +46,12 @@ p.intro {
 
 a {
   color: #8eb640;
+
+  &.logo {
+    &:hover, &:focus {
+      color: #516e18;
+    }
+  }
 }
 
 a:hover, a:focus {

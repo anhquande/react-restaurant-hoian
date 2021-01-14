@@ -15,7 +15,7 @@ const NavBar = ()=>{
             <span className="sr-only">Toggle navigation</span> <span className="icon-bar"></span>
             <span className="icon-bar"></span> <span className="icon-bar"></span></button>
           <div className="navbar-brand page-scroll">
-            <a href="#page-top">{t('restaurant_name')}</a>
+            <a href="/#page-top" className={"logo"}>{t('restaurant_name')}</a>
           </div>
         </div>
 
