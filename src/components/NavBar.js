@@ -1,32 +1,45 @@
-import React from 'react';
+import React, {useState} from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
+import clsx from "clsx";
 
-const NavBar = ()=>{
-  const { t } = useTranslation();
+const NavBar = () => {
+  const {t} = useTranslation();
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen(!open);
+  }
+
+  const closeNav = () => {
+    setOpen(false);
+  }
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
         <div className="navbar-header">
           <button type="button"
                   className="navbar-toggle collapsed"
-                  data-toggle="collapse"
-                  data-target="#bs-example-navbar-collapse-1">
-            <span className="sr-only">Toggle navigation</span> <span className="icon-bar"></span>
-            <span className="icon-bar"></span> <span className="icon-bar"></span></button>
+                  onClick={toggleMenu}
+          >
+            <span className="sr-only">Toggle navigation</span> <span className="icon-bar"/>
+            <span className="icon-bar"/> <span className="icon-bar"/>
+          </button>
           <div className="navbar-brand page-scroll">
             <a href="/#page-top" className={"logo"}>{t('restaurant_name')}</a>
           </div>
         </div>
 
-        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div className={clsx('navbar-collapse', {
+          'collapse': !open
+        })}>
           <ul className="nav navbar-nav navbar-right">
-            <li><a href="/#about" className="page-scroll">{t('nav_about')}</a></li>
-            <li><a href="/#restaurant-menu" className="page-scroll">{t('nav_restaurant_menu')}</a></li>
-            <li><a href="/#gallery" className="page-scroll">{t('nav_gallery')}</a></li>
-            <li><a href="/#contact" className="page-scroll">{t('nav_contact')}</a></li>
-            <li><a href="/imprint" className="page-scroll">{t('nav_imprint')}</a></li>
-            <li><LanguageSwitcher/></li>
+            <li onClick={closeNav}><a href="/#about" className="page-scroll">{t('nav_about')}</a></li>
+            <li onClick={closeNav}><a href="/#restaurant-menu" className="page-scroll">{t('nav_restaurant_menu')}</a></li>
+            <li onClick={closeNav}><a href="/#gallery" className="page-scroll">{t('nav_gallery')}</a></li>
+            <li onClick={closeNav}><a href="/#contact" className="page-scroll">{t('nav_contact')}</a></li>
+            <li onClick={closeNav}><a href="/imprint" className="page-scroll">{t('nav_imprint')}</a></li>
+            <li onClick={closeNav}><LanguageSwitcher/></li>
           </ul>
         </div>
       </div>
