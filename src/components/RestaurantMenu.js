@@ -70,8 +70,8 @@ const MenuItem = ({ item }) => {
       <ItemName item={item}></ItemName>
       <Price>{item.price}</Price>
       <div className="menu-item-description">{item.description}</div>
-      {item.upgrades && item.upgrades.map(x => (
-        <MenuItemUpgrade details={x}/>
+      {item.upgrades && item.upgrades.map((x, index) => (
+        <MenuItemUpgrade details={x} key={index}/>
       ))}
     </div>
   )
