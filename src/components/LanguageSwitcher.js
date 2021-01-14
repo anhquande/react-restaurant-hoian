@@ -7,6 +7,8 @@ import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import {MdLanguage as LanguageIcon} from "react-icons/md";
+
 import { Tooltip } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -71,7 +73,7 @@ export default function LanguageSwitcher() {
                         aria-label="delete"
                         color="primary"
                         onClick={handleClick}>
-              {i18n.language}
+              <LanguageIcon style={{marginRight:4}} fontSize={14}/> {i18n.language}
             </IconButton>
           </Tooltip>
 
@@ -79,7 +81,7 @@ export default function LanguageSwitcher() {
             <Paper className={classes.paper}>
               <List component="nav" aria-label="main mailbox folders">
 
-                {['en', 'de', 'vi', 'cn', 'jp'].map(locale => {
+                {['de', 'en', 'vi'].map(locale => {
                   return (
                     <LanguageItem locale={locale} key={locale}/>
                   )
